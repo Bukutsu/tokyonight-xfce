@@ -22,6 +22,7 @@ Keep the normal XFCE window decorations in **Settings → Window Manager → Sty
 TokyoNight/
 ├── gtk-2.0/gtkrc
 ├── gtk-3.0/gtk.css
+├── xfwm4/                # Default XFCE geometry, recolored only
 └── index.theme
 ```
 
@@ -47,4 +48,4 @@ TokyoNight/
 
 ## Scope
 
-This is a GTK2/GTK3 color style. It does not include an XFWM4 theme, icon theme, wallpaper, panel layout, or application configuration.
+This includes GTK2/GTK3 colors and an XFWM4 theme made by recoloring the stock XFCE `Default` XPM assets. Window decoration dimensions, button layout, spacing, and other geometry remain from the default theme. It does not include an icon theme, wallpaper, panel layout, or application configuration.
