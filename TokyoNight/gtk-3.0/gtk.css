@@ -1,3 +1,5 @@
+@import url("resource:///org/gtk/libgtk/theme/Adwaita/gtk-contained-dark.css");
+
 /* Tokyo Night: night palette from folke/tokyonight.nvim */
 @define-color tn_bg #1a1b26;
 @define-color tn_bg_dark #16161e;
