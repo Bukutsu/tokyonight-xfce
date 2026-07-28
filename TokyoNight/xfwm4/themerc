@@ -19,3 +19,13 @@ title_shadow_active=false
 title_shadow_inactive=false
 title_vertical_offset_active=1
 title_vertical_offset_inactive=1
+# Tokyo Night symbolic colors used by the stock XPM assets.
+active_color_2=#1a1b26
+active_mid_2=#292e42
+active_hilight_2=#3b4261
+active_shadow_2=#16161e
+active_text_color=#c0caf5
+inactive_color_2=#16161e
+inactive_mid_2=#16161e
+inactive_shadow_2=#0c0e14
+inactive_text_color=#565f89
