@@ -1,0 +1,87 @@
+/* Tokyo Night: night palette from folke/tokyonight.nvim */
+@define-color tn_bg #1a1b26;
+@define-color tn_bg_dark #16161e;
+@define-color tn_bg_highlight #292e42;
+@define-color tn_fg #c0caf5;
+@define-color tn_fg_dark #a9b1d6;
+@define-color tn_gutter #3b4261;
+@define-color tn_blue #7aa2f7;
+@define-color tn_cyan #7dcfff;
+@define-color tn_green #9ece6a;
+@define-color tn_magenta #bb9af7;
+@define-color tn_orange #ff9e64;
+@define-color tn_red #f7768e;
+@define-color tn_yellow #e0af68;
+@define-color tn_comment #565f89;
+@define-color tn_terminal_black #414868;
+
+.background,
+window,
+dialog,
+popover,
+menu,
+.menu,
+tooltip {
+  background-color: @tn_bg;
+  color: @tn_fg;
+}
+
+view,
+textview text,
+treeview,
+iconview,
+entry,
+spinbutton,
+combobox,
+notebook {
+  background-color: @tn_bg_dark;
+  color: @tn_fg;
+}
+
+button,
+.raised-button {
+  background-color: @tn_bg_highlight;
+  color: @tn_fg;
+}
+
+button:hover,
+menuitem:hover,
+.view:hover {
+  background-color: @tn_gutter;
+  color: @tn_blue;
+}
+
+*:selected,
+selection {
+  background-color: @tn_blue;
+  color: @tn_bg;
+}
+
+entry:focus,
+button:focus {
+  border-color: @tn_blue;
+}
+
+label:disabled,
+*:disabled {
+  color: @tn_comment;
+}
+
+scrollbar slider {
+  background-color: @tn_gutter;
+}
+
+scrollbar slider:hover,
+scrollbar slider:active {
+  background-color: @tn_blue;
+}
+
+progressbar progress,
+scale highlight {
+  background-color: @tn_blue;
+}
+
+.xfce4-panel {
+  background-color: @tn_bg_dark;
+  color: @tn_fg;
+}

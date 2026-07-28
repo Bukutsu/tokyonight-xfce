@@ -1,0 +1,25 @@
+# Tokyo Night: night palette from folke/tokyonight.nvim
+style "tokyo-night-colors" {
+  bg[NORMAL] = "#1a1b26"
+  bg[PRELIGHT] = "#292e42"
+  bg[ACTIVE] = "#16161e"
+  bg[SELECTED] = "#7aa2f7"
+  bg[INSENSITIVE] = "#16161e"
+  fg[NORMAL] = "#c0caf5"
+  fg[PRELIGHT] = "#7aa2f7"
+  fg[ACTIVE] = "#c0caf5"
+  fg[SELECTED] = "#1a1b26"
+  fg[INSENSITIVE] = "#565f89"
+  base[NORMAL] = "#16161e"
+  base[PRELIGHT] = "#292e42"
+  base[ACTIVE] = "#16161e"
+  base[SELECTED] = "#7aa2f7"
+  base[INSENSITIVE] = "#16161e"
+  text[NORMAL] = "#c0caf5"
+  text[PRELIGHT] = "#7aa2f7"
+  text[ACTIVE] = "#c0caf5"
+  text[SELECTED] = "#1a1b26"
+  text[INSENSITIVE] = "#565f89"
+}
+
+class "*" style "tokyo-night-colors"
