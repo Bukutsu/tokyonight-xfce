@@ -48,4 +48,4 @@ TokyoNight/
 
 ## Scope
 
-This includes GTK2/GTK3 colors and an XFWM4 theme made by recoloring the stock XFCE `Default` XPM assets. Window decoration dimensions, button layout, spacing, and other geometry remain from the default theme. It does not include an icon theme, wallpaper, panel layout, or application configuration.
+This includes GTK2/GTK3 colors and an XFWM4 theme using the stock XFCE `Default` XPM assets and color-symbol resolution, matching how the default XFWM4 theme derives colors from GTK. Window decoration dimensions, button layout, spacing, and other geometry remain from the default theme. It does not include an icon theme, wallpaper, panel layout, or application configuration.
