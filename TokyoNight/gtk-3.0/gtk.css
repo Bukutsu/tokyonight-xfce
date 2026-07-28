@@ -110,3 +110,93 @@ scale highlight {
   background-color: @tn_bg_dark;
   color: @tn_fg;
 }
+
+/* GTK3 coverage: keep Adwaita geometry, replace its remaining surfaces/colors. */
+* {
+  color: @tn_fg;
+}
+
+window,
+decoration,
+.background,
+headerbar,
+.titlebar,
+.toolbar,
+menubar,
+statusbar,
+notebook,
+scrolledwindow,
+viewport,
+.view,
+list,
+row,
+frame {
+  background-color: @tn_bg;
+}
+
+view,
+textview text,
+treeview,
+iconview,
+entry,
+spinbutton,
+combobox,
+list row,
+.sidebar,
+.sidebar-row {
+  background-color: @tn_bg_dark;
+  color: @tn_fg;
+}
+
+button,
+modelbutton,
+.linked button {
+  background-color: @tn_bg_highlight;
+  color: @tn_fg;
+}
+
+button:hover,
+modelbutton:hover,
+menuitem:hover,
+list row:hover {
+  background-color: @tn_gutter;
+  color: @tn_blue;
+}
+
+popover,
+popover.background,
+menu,
+.menu,
+.context-menu,
+tooltip {
+  background-color: @tn_bg_dark;
+  color: @tn_fg;
+}
+
+*:selected,
+selection,
+.view:selected,
+list row:selected,
+treeview:selected {
+  background-color: @tn_blue;
+  color: @tn_bg;
+}
+
+entry:focus,
+button:focus,
+spinbutton:focus,
+combobox:focus {
+  border-color: @tn_blue;
+}
+
+scale trough,
+progressbar trough,
+scrollbar trough {
+  background-color: @tn_gutter;
+}
+
+scale highlight,
+progressbar progress,
+scrollbar slider {
+  background-color: @tn_blue;
+}
