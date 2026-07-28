@@ -228,7 +228,9 @@ XfdesktopIconView label:backdrop,
 XfdesktopIconView.view.label:selected,
 XfdesktopIconView.view label:selected,
 XfdesktopIconView label:selected,
-XfdesktopIconView.view:active {
+XfdesktopIconView.view.label:active,
+XfdesktopIconView.view label:active,
+XfdesktopIconView label:active {
   background-color: $selected_bg_color;
   color: $selected_fg_color;
   text-shadow: none;
