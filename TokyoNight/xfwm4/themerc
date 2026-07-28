@@ -1,21 +1,27 @@
-# TokyoNight uses XFCE default geometry and GTK-derived symbolic colors.
-active_text_color=active_text_color_2
-active_text_shadow_color=active_hilight_2
-inactive_text_color=inactive_text_color_2
-inactive_text_shadow_color=inactive_hilight_2
-button_offset=0
-button_spacing=2
-full_width_title=true
-frame_border_top=5
-maximized_offset=0
-show_app_icon=true
-shadow_delta_height=4
-shadow_delta_width=-6
-shadow_delta_x=-6
-shadow_delta_y=-8
-shadow_opacity=30
-title_horizontal_offset=1
+# Tokyo Night palette; Greybird geometry and artwork.
+# Author: Simon Steinbeiß <simon.steinbeiss@elfenbeinturm.at>
+# Modified by: Marcelo Aguero <marceloaguero@gmail.com>
+# Modified again by: Simon Steinbeiß <simon.steinbeiss@elfenbeinturm.at>
+# Modified again by: Maurizio Galli <maurizio.galli@gmail.com>
+# Author of original metacity theme: elementart Art Team
+# Greybird theme for xfwm4 using GTK color pickup.
+# License: GPL
+# Date: January 2011
+
+active_text_color=#c0caf5
+# active_text_shadow_color=#ececec
+inactive_text_color=#565f89
+# inactive_text_shadow_color=#ececec
 title_shadow_active=false
 title_shadow_inactive=false
-title_vertical_offset_active=1
-title_vertical_offset_inactive=1
+full_width_title=true
+title_vertical_offset_active=2
+title_vertical_offset_inactive=2
+button_offset=4
+button_spacing=2
+shadow_delta_height=2
+shadow_delta_width=0
+shadow_delta_x=0
+shadow_delta_y=-10
+shadow_opacity=50
+frame_border_top=1
