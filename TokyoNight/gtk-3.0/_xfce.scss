@@ -144,6 +144,47 @@ $variant: 'dark';
 wnck-pager {
   &:selected { background-color: shade($selected_bg_color, 0.88); }
   &:hover { background-color: $selected_bg_color; }
+  &:active { background-color: darken($selected_bg_color, 10%); }
+}
+
+/* Whisker Menu */
+window#whiskermenu-window {
+    background-color: transparent;
+
+    entry.search {
+        background-color: $base_color;
+        color: $text_color;
+    }
+
+    > frame > border {
+        background-color: $menu_color;
+        border-color: $borders_color;
+    }
+
+    box.categories > button.radio {
+        padding: 4px 8px;
+        color: $fg_color;
+
+        &:hover {
+            background-color: $base_hover_color;
+        }
+
+        &:checked, &:active {
+            background-color: $selected_bg_color;
+            color: $selected_fg_color;
+        }
+    }
+
+    scrolledwindow.frame {
+        background-color: $base_color;
+
+        treeview.view {
+            &:selected {
+                background-color: $selected_bg_color;
+                color: $selected_fg_color;
+            }
+        }
+    }
 }
 
 /* Thunar's sidebar top border */
