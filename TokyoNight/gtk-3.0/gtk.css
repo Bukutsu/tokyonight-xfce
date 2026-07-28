@@ -2106,17 +2106,13 @@ window#whiskermenu-window scrolledwindow.frame treeview.view:selected { backgrou
 
 XfdesktopIconView.view { background: transparent; color: #c0caf5; border-radius: 3px; }
 
-XfdesktopIconView.view:active { background-color: rgba(50, 112, 243, 0.5); color: #7aa2f7; text-shadow: 0 1px 1px black; }
+XfdesktopIconView.view .label, XfdesktopIconView.view.label { color: #c0caf5; background-color: transparent; border-radius: 3px; text-shadow: 1px 1px 2px black; }
 
-XfdesktopIconView.view .label { text-shadow: 1px 1px 2px black; outline-style: none; }
+XfdesktopIconView.view .label:backdrop, XfdesktopIconView.view.label:backdrop { color: #c0caf5; background-color: transparent; }
 
-XfdesktopIconView.view .label:active { color: #1a1b26; }
+XfdesktopIconView.view .label:active, XfdesktopIconView.view .label:selected, XfdesktopIconView.view headerbar.selection-mode .label.subtitle:link, headerbar.selection-mode XfdesktopIconView.view .label.subtitle:link, XfdesktopIconView.view .selection-mode.titlebar:not(headerbar) .label.subtitle:link, .selection-mode.titlebar:not(headerbar) XfdesktopIconView.view .label.subtitle:link, XfdesktopIconView.view.label:active, XfdesktopIconView.view.label:selected { background-color: #7aa2f7; color: #1a1b26; }
 
-XfdesktopIconView.view .label:backdrop { color: #1a1b26; background-color: transparent; }
-
-XfdesktopIconView.view .label:selected, XfdesktopIconView.view headerbar.selection-mode .label.subtitle:link, headerbar.selection-mode XfdesktopIconView.view .label.subtitle:link, XfdesktopIconView.view .selection-mode.titlebar:not(headerbar) .label.subtitle:link, .selection-mode.titlebar:not(headerbar) XfdesktopIconView.view .label.subtitle:link { background-color: #dae5fd; }
-
-XfdesktopIconView.view .label:selected:backdrop, XfdesktopIconView.view headerbar.selection-mode .label.subtitle:backdrop:link, headerbar.selection-mode XfdesktopIconView.view .label.subtitle:backdrop:link, XfdesktopIconView.view .selection-mode.titlebar:not(headerbar) .label.subtitle:backdrop:link, .selection-mode.titlebar:not(headerbar) XfdesktopIconView.view .label.subtitle:backdrop:link { background-color: rgba(122, 162, 247, 0.5); }
+XfdesktopIconView.view .label:selected:backdrop, XfdesktopIconView.view headerbar.selection-mode .label.subtitle:backdrop:link, headerbar.selection-mode XfdesktopIconView.view .label.subtitle:backdrop:link, XfdesktopIconView.view .selection-mode.titlebar:not(headerbar) .label.subtitle:backdrop:link, .selection-mode.titlebar:not(headerbar) XfdesktopIconView.view .label.subtitle:backdrop:link, XfdesktopIconView.view.label:selected:backdrop { background-color: rgba(122, 162, 247, 0.5); color: #c0caf5; }
 
 XfdesktopIconView.view .rubberband { border-radius: 0; }
 

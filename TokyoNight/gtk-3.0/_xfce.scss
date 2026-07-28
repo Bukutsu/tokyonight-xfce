@@ -202,30 +202,33 @@ window#whiskermenu-window {
 
 XfdesktopIconView.view {
   background: transparent;
-  color: $panel_fg_color;
+  color: $text_color;
   border-radius: 3px;
-  &:active {
-    background-color: rgba(darken($selected_bg_color, 15%), 0.5);
-    color: $selected_bg_color;
-    text-shadow: 0 1px 1px black;
-  }
-  .label {
+
+  .label,
+  &.label {
+    color: $text_color;
+    background-color: transparent;
+    border-radius: 3px;
     text-shadow: 1px 1px 2px black;
-    outline-style: none;
-    &:active {
-        color: $selected_fg_color;
-    }
+
     &:backdrop {
-      color: $selected_fg_color;
+      color: $text_color;
       background-color: transparent;
     }
+
+    &:active,
     &:selected {
-      background-color: lighten($selected_bg_color, 20%);
+      background-color: $selected_bg_color;
+      color: $selected_fg_color;
     }
+
     &:selected:backdrop {
       background-color: rgba($selected_bg_color, 0.5);
+      color: $text_color;
     }
   }
+
   .rubberband {
     @extend rubberband;
     border-radius: 0;
