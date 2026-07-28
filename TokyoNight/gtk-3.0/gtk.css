@@ -200,3 +200,56 @@ progressbar progress,
 scrollbar slider {
   background-color: @tn_blue;
 }
+
+/* Xfce-specific surfaces, following Greybird's _xfce.scss structure. */
+.xfce4-panel.background,
+.xfce4-panel.background .tasklist button,
+.xfce4-panel.background .plugin {
+  background-color: #16161e;
+  color: #c0caf5;
+}
+
+.xfce4-panel.background button,
+.xfce4-panel.background .tasklist button.flat {
+  background-color: transparent;
+  color: #a9b1d6;
+}
+
+.xfce4-panel.background button:hover,
+.xfce4-panel.background button:active,
+.xfce4-panel.background button:checked,
+.xfce4-panel.background .tasklist button:hover,
+.xfce4-panel.background .tasklist button:checked {
+  background-color: #292e42;
+  color: #7aa2f7;
+}
+
+.thunar toolbar,
+.thunar .sidebar.frame {
+  background-color: #1a1b26;
+  color: #c0caf5;
+  border-color: #3b4261;
+}
+
+XfdesktopIconView.view,
+XfdesktopIconView.view .label {
+  background-color: transparent;
+  color: #c0caf5;
+}
+
+XfdesktopIconView.view:active,
+XfdesktopIconView.view .label:selected {
+  background-color: #7aa2f7;
+  color: #1a1b26;
+}
+
+#XfceNotifyWindow {
+  background-color: #16161e;
+  color: #c0caf5;
+  border-color: #3b4261;
+}
+
+#XfceNotifyWindow button:hover {
+  background-color: #292e42;
+  color: #7aa2f7;
+}
