@@ -204,35 +204,42 @@ XfdesktopIconView.view {
   background: transparent;
   color: $text_color;
   border-radius: 3px;
+}
 
-  .label,
-  &.label {
-    color: $text_color;
-    background-color: transparent;
-    border-radius: 3px;
-    text-shadow: 1px 1px 2px black;
+XfdesktopIconView.view.label,
+XfdesktopIconView.view label,
+XfdesktopIconView label,
+.XfdesktopIconView label {
+  background-color: transparent;
+  border-radius: 3px;
+  color: $text_color;
+  text-shadow: 1px 1px 2px black;
+}
 
-    &:backdrop {
-      color: $text_color;
-      background-color: transparent;
-    }
+XfdesktopIconView.view.label:backdrop,
+XfdesktopIconView.view label:backdrop,
+XfdesktopIconView label:backdrop,
+.XfdesktopIconView label:backdrop {
+  background-color: transparent;
+  color: $text_color;
+  text-shadow: 1px 1px 2px black;
+}
 
-    &:active,
-    &:selected {
-      background-color: $selected_bg_color;
-      color: $selected_fg_color;
-    }
+XfdesktopIconView.view.label:selected,
+XfdesktopIconView.view label:selected,
+XfdesktopIconView label:selected,
+XfdesktopIconView.view:active {
+  background-color: $selected_bg_color;
+  color: $selected_fg_color;
+  text-shadow: none;
+}
 
-    &:selected:backdrop {
-      background-color: rgba($selected_bg_color, 0.5);
-      color: $text_color;
-    }
-  }
-
-  .rubberband {
-    @extend rubberband;
-    border-radius: 0;
-  }
+XfdesktopIconView.view.label:selected:backdrop,
+XfdesktopIconView.view label:selected:backdrop,
+XfdesktopIconView label:selected:backdrop {
+  background-color: transparentize($selected_bg_color, 0.5);
+  color: $text_color;
+  text-shadow: none;
 }
 
 #XfceNotifyWindow {
